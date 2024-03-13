@@ -1,5 +1,6 @@
 package com.inditex.pruebaprecios.domain.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,9 +26,12 @@ public class OutputDTO {
     }
 
     private Integer productId;
+    @JsonProperty("chainIdentifier")
     private Integer brandId; // chain identifier
+    @JsonProperty("rateToApply")
     private Integer priceList; // rate to apply
     private LocalDateTime startDate;
     private LocalDateTime endDate;
+    @JsonProperty("finalPrice")
     private BigDecimal price; // final price
 }
