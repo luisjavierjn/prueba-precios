@@ -1,16 +1,16 @@
 package com.inditex.pruebaprecios.domain.requests;
 
 import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.time.LocalDateTime;
 
-@Setter
 @Getter
+@AllArgsConstructor
 public class CreatePriceRequest {
     private LocalDateTime applicationDate;
-    private Integer productId;
+    private int productId;
     @NotEmpty(message = "Brand Id should not be empty")
     private String brandId;
 }
