@@ -74,6 +74,7 @@ class PriceControllerTests {
                 .andExpect(jsonPath("$[0].finalPrice" , is(35.50)));
     }
 
+    // https://www.baeldung.com/parameterized-tests-junit-5
     @ParameterizedTest
     @CsvSource({
             "2020-06-14T10:00:00,35455,1,35455,2020-06-14T00:00:00,2020-06-14T15:00:00,1,1,35.50", // Test 1: request at 10:00 a.m. on the 14th for product 35455 for brand 1 (XYZ)
