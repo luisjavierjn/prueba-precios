@@ -1,5 +1,7 @@
 # PRUEBA PRECIOS
 
+[Problem Statement](./Prueba%20Precios%20TEXT.docx)
+
 This project use Flyway to handle modifications to the database H2, the project has been Dockerized, and  
 it runs with a "docker-compose up" command, coverage is above 90%, it uses ParameterizedTest to perform all  
 the tests suggested by the exercise document.  
